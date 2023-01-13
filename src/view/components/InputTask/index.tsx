@@ -39,7 +39,7 @@ const InputTask: React.FC<InputTaskProps> = ({
 
 	return (
 		<div className={style.InputTask}>
-			<label htmlFor="" className={style.InputLabel}>
+			<label className={style.InputLabel}>
 				<input
 					type="checkbox"
 					disabled={isEditMode}
@@ -86,7 +86,7 @@ const InputTask: React.FC<InputTaskProps> = ({
 			<button
 				className={style.InputTaskDelete}
 				aria-label={'Delete'}
-				onClick={() => onRemoved(id)}
+				onClick={() => confirm('delete this task') && onRemoved(id)}
 			/>
 		</div>
 	);
