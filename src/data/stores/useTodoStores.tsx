@@ -37,10 +37,9 @@ const localStorageUpdate =
 
 const getCurrentState = () => {
 	try {
-		const currentState = JSON.parse(
+		return JSON.parse(
 			window.localStorage.getItem('tasks') || '[]'
 		) as Task[];
-		return currentState;
 	} catch (e) {
 		console.log(e);
 	}
