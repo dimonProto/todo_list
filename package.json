@@ -1,5 +1,5 @@
 {
-  "homepage": "https://dimonproto.github.io/todo_list/",
+  "homepage": "https://dimonproto.github.io/todo_list",
   "name": "todo_list",
   "private": true,
   "version": "0.0.0",
@@ -7,9 +7,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "tsc && vite src/build",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d src/build",
     "preview": "vite preview"
   },
   "dependencies": {
