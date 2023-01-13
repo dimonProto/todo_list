@@ -1,0 +1,43 @@
+.wrapper{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 45px;
+  margin-bottom: 15px;
+
+  .noTask{
+    text-align: center;
+  }
+
+  .input {
+    border: 1px solid #b1b1b1;
+    border-radius: 5px 0 0 5px;
+    padding: 9px 10px;
+    font: 1rem/1.4 'Roboto', 'sans-serif';
+    background-color: #DBE2EF;
+    outline: none;
+    max-height: 42px;
+    &:focus{
+      border: 2px solid #3F72AF;
+      margin: -1px;
+    }
+    &:focus + .button{
+      border: 2px solid #3F72AF;
+      margin: -1px;
+    }
+    &::placeholder{
+      color: #7B7B7B;
+    }
+  }
+
+  .button{
+    border-radius:  0  5px 5px 0;
+    border: 2px solid #3F72AF;
+    cursor: pointer;
+    background: #3F72AF url("../images/plus.svg") no-repeat center center;
+    transition: opacity .5s;
+    &:hover {
+      opacity: 0.8;
+      transition: opacity .5s;
+    }
+  }
+}
