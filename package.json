@@ -3,7 +3,6 @@
   "name": "todo_list",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
   "scripts": {
     "build": "tsc && vite build",
     "predeploy": "npm run build",
